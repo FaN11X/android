@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="github"
-          fetch="https://github.com/" 
-          sync-c="true" sync-j="5"/>
+  <remote  name="github"
+  	       fetch="https://github.com/"
+  	       sync-c="true"
+  	       sync-j="5" />
 
-  <remote name="aosp"
-          revision="refs/tags/android-9.0.0_r40"
-          fetch="https://android.googlesource.com"
-          review="android-review.googlesource.com"
-          sync-c="true" sync-j="5" />
+  <remote  name="lineage"
+  	       fetch="https://github.com/"
+  	       revision="refs/heads/lineage-16.0" />
 
-  <remote name="lineage"
-          revision="refs/heads/lineage-16.0"
-          fetch="https://github.com/"
-          sync-c="true" sync-j="5" />
+  <remote  name="gitlab"
+           fetch="ssh://git@gitlab.com" />
 
-  <default remote="lineage"
-            revision="refs/heads/lineage-16.0"
-            sync-c="true" sync-j="5" />
+  <remote  name="aosp"
+  	       fetch="https://android.googlesource.com"
+  	       review="android-review.googlesource.com"
+  	       revision="refs/tags/android-9.0.0_r40"
+  	       sync-c="true"
+  	       sync-j="5" />
+
+  <default  revision="refs/heads/lineage-16.0"
+  	        remote="lineage"
+  	        sync-c="true"
+  	        sync-j="5" />
 
   <!-- AOSP Projects -->
 
