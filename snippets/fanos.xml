@@ -10,7 +10,7 @@
     <remove-project name="LineageOS/android" />
 
     <!-- FaNOS -->
-    <project name="FaN11X/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-16.0" clone-depth="250" />
+    <project name="FaN11X/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-16.0" clone-depth="50" />
     <project name="FaN11X/android" path="android" remote="github" revision="lineage-16.0" />
 
     <!-- ############################################################################################# -->
