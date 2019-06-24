@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<remote name="fdroid" fetch="https://gitlab.com/fdroid/" />
+  <remote name="fdroid" fetch="https://gitlab.com/fdroid/" />
 
     <!-- ############################################################################################# -->
     <!-- ####################       LineageOS Manifest - Remove and Replace       #################### -->
@@ -12,26 +12,26 @@
     <remove-project name="LineageOS/android" />
 
     <!-- FaNOS -->
-    <project name="FaN11X/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-16.0" clone-depth="50" />
-    <project name="FaN11X/android" path="android" remote="github" revision="lineage-16.0" />
+    <project name="FaN11X/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-16.0" clone-depth="25" />
+    <project name="FaN11X/android"                 path="android"         remote="github" revision="lineage-16.0" clone-depth="25" />
 
     <!-- ############################################################################################# -->
     <!-- ####################       FaNOS Manifest - XIAOMI MI 8 PRO (equuleus)   #################### -->
     <!-- ############################################################################################# -->    
 
-    <project name="LineageOS/android_device_xiaomi_sdm845-common" path="device/xiaomi/sdm845-common" remote="lineage" revision="lineage-16.0" clone-depth="1" />
-    <project name="LineageOS/android_kernel_xiaomi_sdm845" path="kernel/xiaomi/sdm845" remote="lineage" revision="lineage-16.0" clone-depth="1" />
-    <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="lineage" revision="lineage-16.0" clone-depth="1" />
+    <project name="LineageOS/android_device_xiaomi_sdm845-common" path="device/xiaomi/sdm845-common" remote="lineage" revision="lineage-16.0" clone-depth="25" />
+    <project name="LineageOS/android_kernel_xiaomi_sdm845"        path="kernel/xiaomi/sdm845" remote="lineage" revision="lineage-16.0" clone-depth="25" />
+    <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="lineage" revision="lineage-16.0" clone-depth="25" />
 
-    <project name="FaN11X/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="lineage-16.0" />
+    <project name="FaN11X/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="lineage-16.0" clone-depth="25" />
     
-    <project name="FaN11X/android_prebuilts_prebuiltapks" path="prebuilts/prebuiltapks" remote="github" revision="lineage-16.0" />
-    <project name="FaN11X/android_device_xiaomi_equuleus" path="device/xiaomi/equuleus" remote="github" revision="lineage-16.0" />    
+    <project name="FaN11X/android_prebuilts_prebuiltapks" path="prebuilts/prebuiltapks" remote="github" revision="lineage-16.0" clone-depth="25" />
+    <project name="FaN11X/android_device_xiaomi_equuleus" path="device/xiaomi/equuleus" remote="github" revision="lineage-16.0" clone-depth="25" />    
 
     <!-- <project name="Nanolx/android_packages_apps_GmsCore"    path="packages/apps/GmsCore" remote="github" revision="nanolx-new" /> -->
     <!-- <project name="Nanolx/android_packages_apps_UnifiedNlp" path="packages/apps/UnifiedNlp" remote="github" revision="master" /> -->
     <!-- <project name="Nanolx/android_external_GmsApi"        path="external/GmsApi" remote="github" revision="master" /> -->
-    <!-- <project name="Nanolx/android_external_GmsLib" 		  path="external/GmsLib" remote="github" revision="master" /> -->
+    <!-- <project name="Nanolx/android_external_GmsLib"       path="external/GmsLib" remote="github" revision="master" /> -->
     <!-- <project name="Nanolx/android_external_UnifiedNlpApi" path="external/UnifiedNlpApi" remote="github" revision="master" /> -->
     <!-- <project name="Nanolx/android_external_MicroGUiTools" path="external/MicroGUiTools" remote="github" revision="master" /> -->
     
@@ -44,9 +44,16 @@
     <!-- ############################################################################################# -->
     <!-- ####################       FaNOS Manifest - Third party repos   #################### -->
     <!-- ############################################################################################# -->  
-  	
-  	<project name="privileged-extension.git" path="packages/apps/F-DroidPrivilegedExtension" remote="fdroid" revision="refs/tags/0.2.9" />
-
+    
+    <!-- <project name="privileged-extension.git" path="packages/apps/F-DroidPrivilegedExtension" remote="fdroid" revision="refs/tags/0.2.9" /> -->
+    <!-- <project name="microg/android_packages_apps_GmsCore" path="packages/apps/GmsCore" remote="github" revision="master" /> -->
+    <project name="FaN11X/android_packages_apps_GmsCore"    path="packages/apps/GmsCore"    remote="github" revision="master" clone-depth="25" />
+    <project name="FaN11X/android_packages_apps_GsfProxy"   path="packages/apps/GsfProxy"   remote="github" revision="master" clone-depth="25" />
+    <project name="FaN11X/android_packages_apps_UnifiedNlp" path="packages/apps/UnifiedNlp" remote="github" revision="master" clone-depth="25" />
+    <project name="FaN11X/android_packages_apps_RemoteDroidGuard" path="packages/apps/RemoteDroidGuard" remote="github" revision="master" clone-depth="25" />
+    <project name="FaN11X/android_external_GmsLib"          path="external/GmsLib"          remote="github" revision="master" clone-depth="25" />
+    <project name="FaN11X/android_external_GmsApi"          path="external/GmsApi"          remote="github" revision="master" clone-depth="25" />
+    <project name="FaN11X/android_external_Wearable"        path="external/Wearable"        remote="github" revision="master" clone-depth="25" />
     <!-- ############################################################################################# -->
     <!-- ####################       LineageOS & AOSP - Remove projects not required   ################ -->
     <!-- ############################################################################################# -->
@@ -79,7 +86,7 @@
     <remove-project name="LineageOS/android_packages_apps_Contacts" />
     <remove-project name="LineageOS/android_packages_apps_CellBroadcastReceiver" />
     <remove-project name="LineageOS/android_packages_apps_ExactCalculator" /> 
-    <remove-project name="LineageOS/android_packages_apps_Exchange" />
+    <!-- <remove-project name="LineageOS/android_packages_apps_Exchange" /> -->
     <remove-project name="LineageOS/android_packages_apps_EmergencyInfo" /> 
     <remove-project name="LineageOS/android_packages_apps_Eleven" />      
     <remove-project name="LineageOS/android_packages_apps_FMRadio" />
@@ -101,9 +108,9 @@
 
     <!-- <remove-project name="LineageOS/android_packages_services_BuiltInPrintService" /> -->
 
-    <remove-project name="LineageOS/android_packages_providers_PartnerBookmarksProvider" />
-    <remove-project name="LineageOS/android_packages_providers_WeatherProvider" />
-    <remove-project name="LineageOS/android_packages_providers_TvProvider" />
+    <!-- <remove-project name="LineageOS/android_packages_providers_PartnerBookmarksProvider" /> -->
+    <!-- <remove-project name="LineageOS/android_packages_providers_WeatherProvider" /> -->
+    <!-- <remove-project name="LineageOS/android_packages_providers_TvProvider" /> -->
 
     <!-- <remove-project name="LineageOS/android_packages_apps_OpenWeatherMapProvider" /> -->
     <!-- <remove-project name="LineageOS/android_packages_apps_WallpaperPicker" /> -->
